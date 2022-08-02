@@ -1,24 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6xl-iK-qRS">
+                                <rect key="frame" x="40" y="135" width="334" height="358.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnG-6U-F2q">
+                                <rect key="frame" x="20" y="537" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맥주 뭐 마시지?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTV-do-fNr">
+                                <rect key="frame" x="0.0" y="64" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사진을 터치하세요! 맥주를 추천해드립니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-EB-ATc">
+                                <rect key="frame" x="20" y="106" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ODJ-LE-zzo">
+                                <rect key="frame" x="20" y="583" width="374" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6xl-iK-qRS" firstAttribute="top" secondItem="S7d-EB-ATc" secondAttribute="bottom" constant="8" symbolic="YES" id="06M-ll-89W"/>
+                            <constraint firstItem="S7d-EB-ATc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="22N-Rb-eJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7d-EB-ATc" secondAttribute="trailing" constant="20" id="4gj-Vt-kt5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6xl-iK-qRS" secondAttribute="trailing" constant="40" id="92q-nM-YXM"/>
+                            <constraint firstItem="ODJ-LE-zzo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="NWD-Yq-iwu"/>
+                            <constraint firstItem="6xl-iK-qRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Nsg-iP-K5h"/>
+                            <constraint firstItem="6xl-iK-qRS" firstAttribute="top" secondItem="WTV-do-fNr" secondAttribute="bottom" constant="50" id="RyY-Iy-cQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hnG-6U-F2q" secondAttribute="trailing" constant="20" id="VJL-CS-K9e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ODJ-LE-zzo" secondAttribute="bottom" constant="100" id="VQB-gv-XCh"/>
+                            <constraint firstItem="6xl-iK-qRS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="a6P-xK-npB"/>
+                            <constraint firstItem="ODJ-LE-zzo" firstAttribute="trailing" secondItem="hnG-6U-F2q" secondAttribute="trailing" id="aIZ-iK-V7k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WTV-do-fNr" secondAttribute="trailing" id="dHm-og-pt6"/>
+                            <constraint firstItem="ODJ-LE-zzo" firstAttribute="leading" secondItem="hnG-6U-F2q" secondAttribute="leading" id="fmp-Te-AfN"/>
+                            <constraint firstItem="ODJ-LE-zzo" firstAttribute="top" secondItem="hnG-6U-F2q" secondAttribute="bottom" constant="25" id="gIf-Ro-6Cm"/>
+                            <constraint firstItem="hnG-6U-F2q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hV2-kz-kGr"/>
+                            <constraint firstItem="WTV-do-fNr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p4B-6y-LJc"/>
+                            <constraint firstItem="6xl-iK-qRS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p6L-f9-9iz"/>
+                            <constraint firstItem="WTV-do-fNr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="q2R-Oh-rkh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="img_beer" destination="6xl-iK-qRS" id="eGH-z2-uyM"/>
+                        <outlet property="lb_beerName" destination="hnG-6U-F2q" id="DsW-dw-XVt"/>
+                        <outlet property="tv_beerDescription" destination="ODJ-LE-zzo" id="U4M-bG-gcn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
+        </scene>
+        <!--Beer View Controller-->
+        <scene sceneID="wHK-R2-e1X">
+            <objects>
+                <viewController storyboardIdentifier="BeerViewController" id="YwS-5Y-mCI" customClass="BeerViewController" customModule="NetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbe-9b-wdM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kTE-KG-Ala">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tcd-zu-JoW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kTE-KG-Ala" firstAttribute="leading" secondItem="tcd-zu-JoW" secondAttribute="leading" id="Jat-C5-4fw"/>
+                            <constraint firstItem="kTE-KG-Ala" firstAttribute="top" secondItem="tcd-zu-JoW" secondAttribute="top" id="Lal-7H-Yuc"/>
+                            <constraint firstItem="tcd-zu-JoW" firstAttribute="bottom" secondItem="kTE-KG-Ala" secondAttribute="bottom" id="MKB-jX-3X6"/>
+                            <constraint firstItem="tcd-zu-JoW" firstAttribute="trailing" secondItem="kTE-KG-Ala" secondAttribute="trailing" id="kOw-1M-4Ab"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerTableView" destination="kTE-KG-Ala" id="C0U-Aa-aA0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rw-9g-idu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="90.401785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

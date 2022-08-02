@@ -13,6 +13,13 @@
 		92E9DF6D2897A13F004A7A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DF6B2897A13F004A7A07 /* Main.storyboard */; };
 		92E9DF6F2897A140004A7A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DF6E2897A140004A7A07 /* Assets.xcassets */; };
 		92E9DF722897A140004A7A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DF702897A140004A7A07 /* LaunchScreen.storyboard */; };
+		92E9DF7B2897A1E5004A7A07 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 92E9DF7A2897A1E5004A7A07 /* Alamofire */; };
+		92E9DF7E2897A1F5004A7A07 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 92E9DF7D2897A1F5004A7A07 /* SwiftyJSON */; };
+		92E9DF8328990446004A7A07 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DF8128990446004A7A07 /* BeerTableViewCell.swift */; };
+		92E9DF8428990446004A7A07 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E9DF8228990446004A7A07 /* BeerTableViewCell.xib */; };
+		92E9DF8628990758004A7A07 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DF8528990758004A7A07 /* BeerViewController.swift */; };
+		92E9DF8828990963004A7A07 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DF8728990963004A7A07 /* ReusableViewProtocol.swift */; };
+		92E9DF8A28990C20004A7A07 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DF8928990C20004A7A07 /* BeerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,11 @@
 		92E9DF6E2897A140004A7A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92E9DF712897A140004A7A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E9DF732897A140004A7A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E9DF8128990446004A7A07 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		92E9DF8228990446004A7A07 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		92E9DF8528990758004A7A07 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		92E9DF8728990963004A7A07 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		92E9DF8928990C20004A7A07 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E9DF7E2897A1F5004A7A07 /* SwiftyJSON in Frameworks */,
+				92E9DF7B2897A1E5004A7A07 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,9 @@
 		92E9DF592897A13F004A7A07 = {
 			isa = PBXGroup;
 			children = (
+				92E9DF8E28990DC4004A7A07 /* Controller */,
+				92E9DF8C28990DAA004A7A07 /* Cell */,
+				92E9DF8B28990DA0004A7A07 /* Protocol */,
 				92E9DF642897A13F004A7A07 /* NetworkBasic */,
 				92E9DF632897A13F004A7A07 /* Products */,
 			);
@@ -56,15 +73,41 @@
 		92E9DF642897A13F004A7A07 /* NetworkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				92E9DF8928990C20004A7A07 /* BeerModel.swift */,
 				92E9DF652897A13F004A7A07 /* AppDelegate.swift */,
 				92E9DF672897A13F004A7A07 /* SceneDelegate.swift */,
-				92E9DF692897A13F004A7A07 /* ViewController.swift */,
 				92E9DF6B2897A13F004A7A07 /* Main.storyboard */,
 				92E9DF6E2897A140004A7A07 /* Assets.xcassets */,
 				92E9DF702897A140004A7A07 /* LaunchScreen.storyboard */,
 				92E9DF732897A140004A7A07 /* Info.plist */,
 			);
 			path = NetworkBasic;
+			sourceTree = "<group>";
+		};
+		92E9DF8B28990DA0004A7A07 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				92E9DF8728990963004A7A07 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		92E9DF8C28990DAA004A7A07 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92E9DF8128990446004A7A07 /* BeerTableViewCell.swift */,
+				92E9DF8228990446004A7A07 /* BeerTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		92E9DF8E28990DC4004A7A07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92E9DF692897A13F004A7A07 /* ViewController.swift */,
+				92E9DF8528990758004A7A07 /* BeerViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,10 @@
 			dependencies = (
 			);
 			name = NetworkBasic;
+			packageProductDependencies = (
+				92E9DF7A2897A1E5004A7A07 /* Alamofire */,
+				92E9DF7D2897A1F5004A7A07 /* SwiftyJSON */,
+			);
 			productName = NetworkBasic;
 			productReference = 92E9DF622897A13F004A7A07 /* NetworkBasic.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +158,10 @@
 				Base,
 			);
 			mainGroup = 92E9DF592897A13F004A7A07;
+			packageReferences = (
+				92E9DF792897A1E5004A7A07 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				92E9DF7C2897A1F5004A7A07 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 92E9DF632897A13F004A7A07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +179,7 @@
 				92E9DF722897A140004A7A07 /* LaunchScreen.storyboard in Resources */,
 				92E9DF6F2897A140004A7A07 /* Assets.xcassets in Resources */,
 				92E9DF6D2897A13F004A7A07 /* Main.storyboard in Resources */,
+				92E9DF8428990446004A7A07 /* BeerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E9DF8628990758004A7A07 /* BeerViewController.swift in Sources */,
 				92E9DF6A2897A13F004A7A07 /* ViewController.swift in Sources */,
 				92E9DF662897A13F004A7A07 /* AppDelegate.swift in Sources */,
 				92E9DF682897A13F004A7A07 /* SceneDelegate.swift in Sources */,
+				92E9DF8328990446004A7A07 /* BeerTableViewCell.swift in Sources */,
+				92E9DF8828990963004A7A07 /* ReusableViewProtocol.swift in Sources */,
+				92E9DF8A28990C20004A7A07 /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +414,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92E9DF792897A1E5004A7A07 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		92E9DF7C2897A1F5004A7A07 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92E9DF7A2897A1E5004A7A07 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92E9DF792897A1E5004A7A07 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		92E9DF7D2897A1F5004A7A07 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92E9DF7C2897A1F5004A7A07 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92E9DF5A2897A13F004A7A07 /* Project object */;
 }
